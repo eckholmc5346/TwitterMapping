@@ -11,6 +11,23 @@ public class Tweet {
 	private Date date;
 	private double sentiment;
 	
+	public Tweet(String user, String text, 
+			GeoLocation location, Date date) {
+		this.user = user;
+		this.text = text;
+		this.location = location;
+		this.date = date;
+		calculateSentiment();
+	}
+	
+	public String getUser() { return user; }
+	public String getText() { return text; }
+	public GeoLocation getLocation() { return location; }
+	public Date getDate() { return date; }
+	
+	public void calculateSentiment() {
+		
+	}
 	
 
 }
